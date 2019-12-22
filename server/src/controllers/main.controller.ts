@@ -14,6 +14,7 @@ export class Controller {
 
     public routes() {
         this.app.route('/').get(this.welcome.welcomeMessage);
-       this.app.route('/products').get(this.product.productsList);
+        this.app.route('/products').get(this.product.productsList);
+        this.app.route('/productsall').get(this.product.getAllProducts);
     }
 }
